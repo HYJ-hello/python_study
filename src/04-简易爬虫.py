@@ -50,3 +50,4 @@ print(f"已提取 {len(links)} 条链接，保存到 {csv_filename}")
 print("\n前5条链接预览：")
 for text, href in links[:5]:
     print(f"{text} -> {href}")
+input("按任意键退出")

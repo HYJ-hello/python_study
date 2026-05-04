@@ -27,5 +27,6 @@ for filename in os.listdir(target_dir):
             os.makedirs(target_folder, exist_ok=True)
             shutil.move(file_path, os.path.join(target_folder, filename))
             print(f"移动: {filename} -> {target_folder}")
-        else:
+        if ext not in file_types:
             print("未找到对应类型")
+input("整理完成，按回车键退出...")
